@@ -1,0 +1,45 @@
+body{
+    color: #232323;
+    font-family: roboto;
+    /* background-color: #85d1d8; */
+    background-image: url(ASUS.jpg);
+    height: 100%;
+    background-attachment: fixed;
+}
+h1, p{
+    text-align: center;
+}
+a{
+    color: #232323;
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.wrapper{
+    width: 700px;
+    margin: 0 auto;
+}
+.zoom-effect{
+    position: relative;
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.kotak{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.kotak img{
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    width: 700px;
+}
+.zoom-effect:hover .kotak img{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
